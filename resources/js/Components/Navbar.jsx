@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "@/Assets/logo.png";
 import wa from "@/Assets/wa.png";
 import { Link } from "react-scroll";
@@ -7,9 +7,24 @@ import { IoMdCloseCircleOutline } from "react-icons/io";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
+    const [scroll, setScroll] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 5) {
+                setNav(false);
+                setScroll(true);
+            } else {
+                setScroll(false);
+            }
+        });
+    });
+
+    let scrollActive = scroll ? "top-0 bg-white shadow" : "top-8";
+
     return (
         <div className="grid grid-cols-1 gap-4">
-            <div className="flex items-center  w-full  text-[12px] px-5 lg:px-[117px] py-2  bg-orange-300">
+            <div className="flex items-center  w-full  text-[11px] px-5 lg:px-[117px] py-2  bg-orange-300">
                 <img
                     src={wa}
                     alt=""
@@ -17,7 +32,9 @@ const Navbar = () => {
                 />
                 <p>HUBUNGI KAMI : 087485416954</p>
             </div>
-            <div className="flex justify-between items-center px-5 lg:px-[120px] h-[60px] w-full fixed top-8">
+            <div
+                className={`flex justify-between items-center px-5 lg:px-[120px] h-[60px] w-full fixed ${scrollActive}`}
+            >
                 <div className="w-[200px] h-[15]">
                     {/* <img
                     src={logo}
@@ -59,7 +76,7 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div className="flex items-center">
-                    <button className="px-6 lg:px-8 bg-green-400 outline-none text-sm hover:bg-orange-400 hover:text-white rounded-full">
+                    <button className="px-5 lg:px-8 py-2 bg-green-400 outline-none text-sm hover:bg-orange-400 hover:text-white rounded-full">
                         Sosial Media
                     </button>
                     <TiThMenuOutline

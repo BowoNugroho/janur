@@ -6,7 +6,7 @@ function Web() {
     return (
         <div>
             <Navbar />
-            {/* <Home /> */}
+            <Home />
         </div>
     );
 }
