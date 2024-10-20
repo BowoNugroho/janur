@@ -24,7 +24,7 @@ const Navbar = () => {
 
     return (
         <div className="grid grid-cols-1 gap-4">
-            <div className="flex items-center  w-full  text-[11px] px-5 lg:px-[117px] py-2  bg-orange-300">
+            <div className="flex items-center  w-full  text-[11px] px-5 lg:px-[117px] py-2  bg-orange-400">
                 <img
                     src={wa}
                     alt=""
@@ -35,7 +35,7 @@ const Navbar = () => {
             <div
                 className={`flex justify-between items-center px-5 lg:px-[120px] h-[60px] w-full fixed ${scrollActive}`}
             >
-                <div className="w-[200px] h-[15]">
+                <div className="w-[120px] h-[15]">
                     {/* <img
                     src={logo}
                     alt=""
@@ -76,7 +76,7 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div className="flex items-center">
-                    <button className="px-5 lg:px-8 py-2 bg-green-400 outline-none text-sm hover:bg-orange-400 hover:text-white rounded-full">
+                    <button className="px-3 lg:px-8 py-2 text-white  bg-orange-400 outline-none lg:text-sm text-[12px] hover:bg-gray-500 rounded-full">
                         Sosial Media
                     </button>
                     <TiThMenuOutline
