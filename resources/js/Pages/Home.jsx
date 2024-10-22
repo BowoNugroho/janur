@@ -9,6 +9,7 @@ import home2 from "@/Assets/home2.jpeg";
 import home11 from "@/Assets/home11.jpeg";
 import ongkir2 from "@/Assets/ongkir2.svg";
 import wedding from "@/Assets/wedding.svg";
+import money1 from "@/Assets/money1.svg";
 
 function Home() {
     return (
@@ -126,10 +127,35 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 pt-5 pb-5 px-5 mb-10  bg-slate-200 rounded-2xl">
-                        <div className="box "></div>
-                        <div className="box"></div>
-                    </div> */}
+                    <div className="gap-4 px-5 mb-10">
+                        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 px-5  pt-5 pb-5 bg-slate-200 rounded-2xl">
+                            <div className="box lg:col-span-2 order-2">
+                                <div className=" flex flex-col lg:gap-2 items-star px-10 pt-16">
+                                    <h1 className="text-left lg:text-[43px] h-[30px] text-lg font-bold">
+                                        Keamanan Pembayaran
+                                    </h1>
+                                    {/* <p className="mt-5 text-gray-400 underline lg:text-[16px] md:text-[14px] text-[12px]">
+                                        Syarat & Ketentuan Berlaku
+                                    </p> */}
+                                    <p className="lg:text-[16px] md:text-[14px] text-[12px] mt-5">
+                                        "Keamanan Anda adalah prioritas kami!
+                                        Nikmati layanan dekorasi dengan sistem
+                                        pembayaran yang aman dan terpercaya."
+                                    </p>
+                                    <button className="px-3 lg:px-8 py-2 w-32 mt-4 shadow bg-orange-400 outline-none text-white lg:text-sm text-[12px] hover:bg-gray-500 rounded-full">
+                                        Pesan
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="box flex justify-center order-1">
+                                <img
+                                    src={money1}
+                                    alt=""
+                                    className="lg:h-[290px] md:h-[250px] h-[150px] "
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </Layout>
