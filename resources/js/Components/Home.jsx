@@ -1,6 +1,7 @@
 import React from "react";
 import home from "@/Assets/home.jpeg";
 import home1 from "@/Assets/home1.jpeg";
+import home2 from "@/Assets/home2.jpeg";
 
 const Home = () => {
     return (
@@ -19,28 +20,64 @@ const Home = () => {
                                 <span>Ridwan Janur</span>
                             </h1>
                             <p className="text-white text-center lg:text-[18px] text-[12px]">
-                                Melayani pesanan Janur, Dekorasi Siraman,
-                                Tuwuhan, Rajut Melati CPW, Rias Busana , MC &
-                                Pemandu dll.
+                                Melayani pesanan Janur, Dekorasi Siraman /
+                                Wedding, Tuwuhan, Rajut Melati CPW, Rias Busana
+                                , MC & Pemandu dll.
                             </p>
                             <a
                                 href=""
-                                className="px-3 lg:px-8 py-2 w-32 shadow bg-orange-400 outline-none text-center  text-white lg:text-sm text-[12px] hover:bg-gray-500 rounded-full"
+                                className="px-3 lg:px-8 py-2 w-32 shadow bg-orange-400 outline-none text-center text-white lg:text-sm text-[12px] hover:bg-gray-500 rounded-full"
                             >
-                                Booking
+                                Pesan
                             </a>
                         </div>
                     </div>
                 </div>
                 <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-4 pt-10 px-5">
                     <div
-                        className="box rounded-2xl lg:h-[500px] md:h-[350px] h-[300px] bg-cover bg-center w-full"
+                        className="box rounded-2xl lg:h-[450px] md:h-[350px] h-[300px] bg-cover bg-center w-full"
                         style={{ backgroundImage: `url(${home1})` }}
-                    ></div>
+                    >
+                        <div className=" flex flex-col lg:gap-2 items-end pt-36 px-10">
+                            <h1 className="text-right lg:text-xl text-lg text-white ">
+                                Melayani
+                            </h1>
+                            <h1 className="text-right lg:text-5xl text-xl text-white font-bold ">
+                                <span> Dekorasi Gedung</span>
+                            </h1>
+                            {/* <p className="text-white text-right lg:text-[16px] text-[12px] ">
+                                Dapatkan{" "}
+                                <span className="font-bold text-orange-400 underline">
+                                    Harga Miring
+                                </span>
+                            </p> */}
+                            <button className="px-3 lg:px-8 py-2 w-32 mt-4 shadow bg-orange-400 outline-none text-white lg:text-sm text-[12px] hover:bg-gray-500 rounded-full">
+                                Pesan
+                            </button>
+                        </div>
+                    </div>
                     <div
-                        className="box rounded-2xl lg:h-[500px] md:h-[350px] h-[300px] bg-cover bg-center w-full"
-                        style={{ backgroundImage: `url(${home1})` }}
-                    ></div>
+                        className="box rounded-2xl lg:h-[450px] md:h-[350px] h-[300px] bg-cover bg-center w-full"
+                        style={{ backgroundImage: `url(${home2})` }}
+                    >
+                        <div className=" flex flex-col lg:gap-2 items-end pt-36 px-10">
+                            <h1 className="text-right lg:text-xl text-lg text-white ">
+                                Melayani
+                            </h1>
+                            <h1 className="text-right lg:text-5xl text-xl text-white font-bold ">
+                                <span> Dekorasi Siraman</span>
+                            </h1>
+                            {/* <p className="text-white text-right lg:text-[16px] text-[12px] ">
+                        Dapatkan{" "}
+                        <span className="font-bold text-orange-400 underline">
+                            Harga Miring
+                        </span>
+                    </p> */}
+                            <button className="px-3 lg:px-8 py-2 w-32 mt-4 shadow bg-orange-400 outline-none text-white lg:text-sm text-[12px] hover:bg-gray-500 rounded-full">
+                                Pesan
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
