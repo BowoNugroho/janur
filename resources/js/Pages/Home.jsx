@@ -129,7 +129,7 @@ function Home() {
                     </div>
                     <div className="gap-4 px-5 mb-10">
                         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 px-5  pt-5 pb-5 bg-slate-200 rounded-2xl">
-                            <div className="box lg:col-span-2 order-2">
+                            <div className="box lg:col-span-2 lg:order-1 md:order-1 order-2">
                                 <div className=" flex flex-col lg:gap-2 items-star px-10 pt-16">
                                     <h1 className="text-left lg:text-[43px] h-[30px] text-lg font-bold">
                                         Keamanan Pembayaran
@@ -147,7 +147,7 @@ function Home() {
                                     </button>
                                 </div>
                             </div>
-                            <div className="box flex justify-center order-1">
+                            <div className="box flex justify-center lg:order-2 md:order-2 order-1">
                                 <img
                                     src={money1}
                                     alt=""
