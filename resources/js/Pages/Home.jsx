@@ -1,4 +1,7 @@
 import React from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { RiDoubleQuotesL } from "react-icons/ri";
 import Navbar from "@/Components/Navbar";
 // import Home from "../Components/Home";
 import About from "../Components/About";
@@ -12,6 +15,25 @@ import wedding from "@/Assets/wedding.svg";
 import money1 from "@/Assets/money1.svg";
 
 function Home() {
+    const responsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5,
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3,
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2,
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
+        },
+    };
     return (
         // <div>
         //     {/* <Navbar /> */}
@@ -153,6 +175,122 @@ function Home() {
                                     alt=""
                                     className="lg:h-[290px] md:h-[250px] h-[150px] "
                                 />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="pt-7 px-5 ">
+                        <div className="rounded-xl mb-10 ">
+                            <div className="flex justify-center mb-9">
+                                <p className="font-bold lg:text-[43px] h-[32px] text-2xl">
+                                    Pelanggan Kami
+                                </p>
+                            </div>
+                            <Carousel responsive={responsive}>
+                                <div className="px-5">
+                                    <img
+                                        src={home11}
+                                        alt=""
+                                        className="rounded-xl"
+                                    />
+                                </div>
+                                <div className="px-5">
+                                    <img
+                                        src={home11}
+                                        alt=""
+                                        className="rounded-xl"
+                                    />
+                                </div>
+                                <div className="px-5">
+                                    <img
+                                        src={home11}
+                                        alt=""
+                                        className="rounded-xl"
+                                    />
+                                </div>
+                                <div className="px-5">
+                                    <img
+                                        src={home11}
+                                        alt=""
+                                        className="rounded-xl"
+                                    />
+                                </div>
+                            </Carousel>
+                        </div>
+                    </div>
+                </div>
+                <div className="bg-slate-200">
+                    <div className="container mx-auto py-2 pb-10">
+                        <div className="flex justify-center mb-6 pt-5">
+                            <p className="font-bold lg:text-[43px] h-[32px] text-2xl">
+                                Testimoni
+                            </p>
+                        </div>
+                        <div className="pt-7 px-5">
+                            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+                                <div className="box bg-white rounded-xl px-10 pt-10">
+                                    <div className="grid grid-cols-3 px-5">
+                                        <div className="box px-2 flex">
+                                            <RiDoubleQuotesL className="text-gray-400 text-5xl" />
+                                        </div>
+                                        <div className="box px-2 pt-2 col-span-2">
+                                            <p className="lg:text-2xl text-lg font-semibold">
+                                                olivia
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="flex justify-center text-center px-5 p-5">
+                                        <p className="lg:text-[20px] text-[14px]">
+                                            "Dekorasi siraman kami benar-benar
+                                            luar biasa! Tim dekorasi sangat
+                                            profesional dan hasilnya melebihi
+                                            ekspektasi kami. Terima kasih telah
+                                            membuat momen spesial kami semakin
+                                            berkesan!"
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="box bg-white rounded-xl px-10 pt-10">
+                                    <div className="grid grid-cols-3 px-5">
+                                        <div className="box px-2 flex">
+                                            <RiDoubleQuotesL className="text-gray-400 text-5xl" />
+                                        </div>
+                                        <div className="box px-2 pt-2 col-span-2">
+                                            <p className="lg:text-2xl text-lg font-semibold">
+                                                olivia
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="flex justify-center text-center px-5 p-5">
+                                        <p className="lg:text-[20px] text-[14px]">
+                                            "Jasa dekorasi siraman ini sangat
+                                            memperhatikan detail. Setiap bunga
+                                            dan aksesori dipilih dengan cermat,
+                                            dan hasilnya luar biasa. Sangat
+                                            puas!"
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="box bg-white rounded-xl px-10 pt-10">
+                                    <div className="grid grid-cols-3 px-5">
+                                        <div className="box px-2 flex">
+                                            <RiDoubleQuotesL className="text-gray-400 text-5xl" />
+                                        </div>
+                                        <div className="box px-2 pt-2 col-span-2">
+                                            <p className="lg:text-2xl text-lg font-semibold">
+                                                olivia
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="flex justify-center text-center px-5 p-5">
+                                        <p className="lg:text-[20px] text-[14px]">
+                                            "Setiap detail dalam dekorasi gedung
+                                            kami sangat diperhatikan. Bunga,
+                                            lampu, dan semua aksesori membuat
+                                            acara kami terasa istimewa. Terima
+                                            kasih banyak!"
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
