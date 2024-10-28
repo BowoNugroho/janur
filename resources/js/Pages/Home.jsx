@@ -14,7 +14,7 @@ import ongkir2 from "@/Assets/ongkir2.svg";
 import wedding from "@/Assets/wedding.svg";
 import money1 from "@/Assets/money1.svg";
 
-function Home() {
+const Home = () => {
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -298,5 +298,5 @@ function Home() {
             </div>
         </Layout>
     );
-}
+};
 export default Home;

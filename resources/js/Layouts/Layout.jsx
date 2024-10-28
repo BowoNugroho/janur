@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import wa from "@/Assets/wa.png";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
+import { Link } from "@inertiajs/react";
 import { TiThMenuOutline } from "react-icons/ti";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { SiGooglemaps, SiGmail, SiWhatsapp, SiInstagram } from "react-icons/si";
@@ -29,7 +30,7 @@ const Layout = ({ children }) => {
             <div className="grid grid-cols-1 gap-4">
                 <div className="flex items-center  w-full  text-[11px] px-5 lg:px-[117px] py-2  bg-orange-400">
                     <SiWhatsapp className="mr-2 text-white" />
-                    <p className="text-white"> HUBUNGI KAMI : 087485416954</p>
+                    <p className="text-white"> HUBUNGI KAMI : 0813 9373 0949</p>
                 </div>
                 <div
                     className={`flex justify-between items-center px-5 lg:px-[120px] h-[60px] w-full fixed ${scrollActive}`}
@@ -45,15 +46,17 @@ const Layout = ({ children }) => {
                     <ul className="hidden md:flex">
                         <li className="flex gap-x-4">
                             <Link
-                                to="home"
-                                key="home"
+                                href="/"
+                                // to="home"
+                                // key="home"
                                 className="hover:text-orange-400 text-sm md:text-md"
                             >
                                 Beranda
                             </Link>
                             <Link
-                                to="about"
-                                key="about"
+                                href="/about"
+                                // to="about"
+                                // key="about"
                                 className="hover:text-orange-400 text-sm md:text-md"
                             >
                                 Tentang Kami
@@ -181,7 +184,7 @@ const Layout = ({ children }) => {
                     </div>
                 </div>
             </div>
-            <div className="bg-gray-600 ">
+            <div className="footer bg-gray-600 ">
                 <div className="container mx-auto py-2">
                     <div className="flex justify-between pt-5 px-5">
                         <p className="flex  text-white px-5 lg:text-lg md:text-md text-[12px]">
