@@ -44,7 +44,7 @@ const Home = () => {
         <Layout>
             <div className="home">
                 <div className="container mx-auto py-2">
-                    <div className="grid grid-cols-1 pt-28 items-center gap-4 px-5">
+                    <div className="grid grid-cols-1 pt-24 items-center gap-4 px-5">
                         <div
                             className="box rounded-2xl lg:h-[600px] md:h-[400px] h-[300px] bg-cover bg-center lg:w-full md:w-full "
                             style={{ backgroundImage: `url(${home1})` }}

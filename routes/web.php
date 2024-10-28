@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return Inertia::render('About');
 });
+Route::get('/product', function () {
+    return Inertia::render('Product');
+});

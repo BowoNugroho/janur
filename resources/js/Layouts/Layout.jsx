@@ -62,8 +62,9 @@ const Layout = ({ children }) => {
                                 Tentang Kami
                             </Link>
                             <Link
-                                to="product"
-                                key="product"
+                                href="/product"
+                                // to="product"
+                                // key="product"
                                 className="hover:text-orange-400 text-sm md:text-md"
                             >
                                 Layanan Kami
