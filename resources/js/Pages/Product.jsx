@@ -24,9 +24,11 @@ const Product = () => {
                 </div>
                 <div className="container mx-auto py-2">
                     <div className="flex justify-center pt-10">
-                        <p className="text-[35px] font-bold">Layanan Kami</p>
+                        <p className="lg:text-[35px] text-[25px]  font-bold">
+                            Layanan Kami
+                        </p>
                     </div>
-                    <div className="grid grid-cols-3 gap-4">
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 pt-5 px-5">
                         <div className="box bg-gray-100 rounded-2xl">
                             <div className="flex justify-center pt-10">
                                 <img
@@ -36,7 +38,7 @@ const Product = () => {
                                 />
                             </div>
                             <div className="flex justify-center pt-5  font-bold mb-10">
-                                <p>Dekorasi Bungan Gedung</p>
+                                <p>Dekorasi Bunga Gedung</p>
                             </div>
                         </div>
                         <div className="box bg-gray-100 rounded-2xl">
@@ -48,7 +50,7 @@ const Product = () => {
                                 />
                             </div>
                             <div className="flex justify-center pt-5  font-bold mb-10">
-                                <p>Dekorasi Bungan Siraman</p>
+                                <p>Dekorasi Bunga Siraman</p>
                             </div>
                         </div>
                         <div className="box bg-gray-100 rounded-2xl">
