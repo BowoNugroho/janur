@@ -22,3 +22,6 @@ Route::get('/about', function () {
 Route::get('/product', function () {
     return Inertia::render('Product');
 });
+Route::get('/contact', function () {
+    return Inertia::render('Contact');
+});

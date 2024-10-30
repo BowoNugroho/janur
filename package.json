@@ -14,6 +14,7 @@
     },
     "dependencies": {
         "@inertiajs/react": "^1.2.0",
+        "@react-google-maps/api": "^2.20.3",
         "ract": "^0.0.1",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",

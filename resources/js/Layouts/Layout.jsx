@@ -70,8 +70,9 @@ const Layout = ({ children }) => {
                                 Layanan Kami
                             </Link>
                             <Link
-                                to="contact"
-                                key="contact"
+                                href="/contact"
+                                // to="contact"
+                                // key="contact"
                                 className="hover:text-orange-400 text-sm md:text-md"
                             >
                                 Kontak Kami
