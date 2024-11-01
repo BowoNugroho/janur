@@ -112,29 +112,33 @@ const Layout = ({ children }) => {
                         <ul className="">
                             <li className="flex gap-y-4 flex-col">
                                 <Link
-                                    to="home"
-                                    key="home"
+                                    href="/"
+                                    // to="home"
+                                    // key="home"
                                     className="hover:text-orange-400 text-sm md:text-md border-b cursor-pointer py-3"
                                 >
                                     Beranda
                                 </Link>
                                 <Link
-                                    to="about"
-                                    key="about"
+                                    href="/about"
+                                    // to="about"
+                                    // key="about"
                                     className="hover:text-orange-400 text-sm md:text-md border-b cursor-pointer py-3"
                                 >
                                     Tentang Kami
                                 </Link>
                                 <Link
-                                    to="product"
-                                    key="product"
+                                    href="/product"
+                                    // to="product"
+                                    // key="product"
                                     className="hover:text-orange-400 text-sm md:text-md border-b cursor-pointer py-3"
                                 >
                                     Layanan Kami
                                 </Link>
                                 <Link
-                                    to="contact"
-                                    key="contact"
+                                    href="/contact"
+                                    // to="contact"
+                                    // key="contact"
                                     className="hover:text-orange-400 text-sm md:text-md border-b cursor-pointer py-3"
                                 >
                                     Kontak Kami
