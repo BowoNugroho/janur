@@ -34,13 +34,14 @@ const Home = () => {
             items: 1,
         },
     };
-    return (
-        // <div>
-        //     {/* <Navbar /> */}
-        //     {/* <Home /> */}
-        //     {/* <About /> */}
-        // </div>
 
+    const phoneNumber = "628156715273"; // Ganti dengan nomor WhatsApp Anda
+    const message =
+        "Halo! Saya ingin bertanya tentang Dekorasi Bunga Gedung Referensi dari Website"; // Pesan default
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+        message
+    )}`;
+    return (
         <Layout>
             <div className="home">
                 <div className="container mx-auto py-2">
@@ -62,7 +63,8 @@ const Home = () => {
                                     Busana , MC & Pemandu dll.
                                 </p>
                                 <a
-                                    href=""
+                                    href={whatsappUrl}
+                                    target="_blank"
                                     className="px-3 lg:px-8 py-2 w-32 shadow bg-orange-400 outline-none text-center text-white lg:text-sm text-[12px] hover:bg-gray-500 rounded-full"
                                 >
                                     Pesan
@@ -82,9 +84,13 @@ const Home = () => {
                                 <h1 className="text-right lg:text-5xl text-xl text-white font-bold ">
                                     <span> Dekorasi Gedung</span>
                                 </h1>
-                                <button className="px-3 lg:px-8 py-2 w-32 mt-4 shadow bg-orange-400 outline-none text-white lg:text-sm text-[12px] hover:bg-gray-500 rounded-full">
+                                <a
+                                    href={whatsappUrl}
+                                    target="_blank"
+                                    className="px-3 lg:px-8 py-2 w-32 shadow bg-orange-400 outline-none text-center text-white lg:text-sm text-[12px] hover:bg-gray-500 rounded-full"
+                                >
                                     Pesan
-                                </button>
+                                </a>
                             </div>
                         </div>
                         <div
@@ -98,9 +104,13 @@ const Home = () => {
                                 <h1 className="text-right lg:text-4xl text-xl text-white font-bold ">
                                     <span> Dekorasi Siraman</span>
                                 </h1>
-                                <button className="px-3 lg:px-8 py-2 w-32 mt-4 shadow bg-orange-400 outline-none text-white lg:text-sm text-[12px] hover:bg-gray-500 rounded-full">
+                                <a
+                                    href={whatsappUrl}
+                                    target="_blank"
+                                    className="px-3 lg:px-8 py-2 w-32 shadow bg-orange-400 outline-none text-center text-white lg:text-sm text-[12px] hover:bg-gray-500 rounded-full"
+                                >
                                     Pesan
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -142,9 +152,13 @@ const Home = () => {
                                         khawatir ongkos kirim! Nikmati GRATIS
                                         ONGKIR untuk semua layanan kami!"
                                     </p>
-                                    <button className="px-3 lg:px-8 py-2 w-32 mt-4 shadow bg-orange-400 outline-none text-white lg:text-sm text-[12px] hover:bg-gray-500 rounded-full">
+                                    <a
+                                        href={whatsappUrl}
+                                        target="_blank"
+                                        className="px-3 lg:px-8 py-2 w-32 shadow bg-orange-400 outline-none text-center text-white lg:text-sm text-[12px] hover:bg-gray-500 rounded-full"
+                                    >
                                         Pesan
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -164,9 +178,13 @@ const Home = () => {
                                         Nikmati layanan dekorasi dengan sistem
                                         pembayaran yang aman dan terpercaya."
                                     </p>
-                                    <button className="px-3 lg:px-8 py-2 w-32 mt-4 shadow bg-orange-400 outline-none text-white lg:text-sm text-[12px] hover:bg-gray-500 rounded-full">
+                                    <a
+                                        href={whatsappUrl}
+                                        target="_blank"
+                                        className="px-3 lg:px-8 py-2 w-32 shadow bg-orange-400 outline-none text-center text-white lg:text-sm text-[12px] hover:bg-gray-500 rounded-full"
+                                    >
                                         Pesan
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                             <div className="box flex justify-center lg:order-2 md:order-2 order-1">

@@ -24,6 +24,13 @@ const Layout = ({ children }) => {
         });
     });
 
+    const phoneNumber = "628156715273"; // Ganti dengan nomor WhatsApp Anda
+    const message =
+        "Halo! Saya ingin bertanya tentang Dekorasi Bunga Gedung Referensi dari Website"; // Pesan default
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+        message
+    )}`;
+
     let scrollActive = scroll ? "top-0 bg-white shadow" : "top-8";
     return (
         <>
@@ -80,9 +87,14 @@ const Layout = ({ children }) => {
                         </li>
                     </ul>
                     <div className="flex items-center">
-                        <button className="px-3 lg:px-8 py-2 text-white  bg-orange-400 outline-none lg:text-sm text-[12px] hover:bg-gray-500 rounded-full">
-                            Sosial Media
-                        </button>
+                        {/* <button>Pesan</button> */}
+                        <a
+                            href={whatsappUrl}
+                            target="_blank"
+                            className="px-3 lg:px-8 py-2 text-white  bg-orange-400 outline-none lg:text-sm text-[12px] hover:bg-gray-500 rounded-full"
+                        >
+                            Pesan
+                        </a>
                         <TiThMenuOutline
                             className="text-2xl block md:hidden ml-2"
                             onClick={() => setNav((prev) => !prev)}
