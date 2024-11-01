@@ -8,6 +8,7 @@ import { SiGooglemaps, SiGmail, SiWhatsapp, SiInstagram } from "react-icons/si";
 import { BsTelephoneFill } from "react-icons/bs";
 import { AiOutlineGlobal, AiOutlineCopyright } from "react-icons/ai";
 import { FaFacebookF, FaYoutube } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 const Layout = ({ children }) => {
     const [nav, setNav] = useState(false);
@@ -32,61 +33,93 @@ const Layout = ({ children }) => {
     )}`;
 
     let scrollActive = scroll ? "top-0 bg-white shadow" : "top-8";
+
+    const variants = {
+        hidden: { opacity: 0, y: -20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    };
+    const variants2 = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    };
+
     return (
         <>
             <div className="grid grid-cols-1 gap-4">
-                <div className="flex items-center  w-full  text-[11px] px-5 lg:px-[117px] py-2  bg-orange-400">
+                <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={variants}
+                    // Durasi animasi
+                    className="flex items-center  w-full  text-[11px] px-5 lg:px-[117px] py-2  bg-orange-400"
+                >
                     <SiWhatsapp className="mr-2 text-white" />
                     <p className="text-white"> HUBUNGI KAMI : 0813 9373 0949</p>
-                </div>
+                </motion.div>
                 <div
                     className={`flex justify-between items-center px-5 lg:px-[120px] h-[60px] w-full fixed ${scrollActive}`}
                 >
-                    <div className="w-[120px] h-[15]">
+                    <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        variants={variants2}
+                        className="w-[120px] h-[15]"
+                    >
                         {/* <img
                     src={logo}
                     alt=""
                     className="w-full h-full object-contain"
                 /> */}
                         <p>Ridwan Janur</p>
-                    </div>
-                    <ul className="hidden md:flex">
-                        <li className="flex gap-x-4">
-                            <Link
-                                href="/"
-                                // to="home"
-                                // key="home"
-                                className="hover:text-orange-400 text-sm md:text-md"
-                            >
-                                Beranda
-                            </Link>
-                            <Link
-                                href="/about"
-                                // to="about"
-                                // key="about"
-                                className="hover:text-orange-400 text-sm md:text-md"
-                            >
-                                Tentang Kami
-                            </Link>
-                            <Link
-                                href="/product"
-                                // to="product"
-                                // key="product"
-                                className="hover:text-orange-400 text-sm md:text-md"
-                            >
-                                Layanan Kami
-                            </Link>
-                            <Link
-                                href="/contact"
-                                // to="contact"
-                                // key="contact"
-                                className="hover:text-orange-400 text-sm md:text-md"
-                            >
-                                Kontak Kami
-                            </Link>
-                        </li>
-                    </ul>
-                    <div className="flex items-center">
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1.5 }}
+                    >
+                        <ul className="hidden md:flex">
+                            <li className="flex gap-x-4">
+                                <Link
+                                    href="/"
+                                    // to="home"
+                                    // key="home"
+                                    className="hover:text-orange-400 text-sm md:text-md"
+                                >
+                                    Beranda
+                                </Link>
+                                <Link
+                                    href="/about"
+                                    // to="about"
+                                    // key="about"
+                                    className="hover:text-orange-400 text-sm md:text-md"
+                                >
+                                    Tentang Kami
+                                </Link>
+                                <Link
+                                    href="/product"
+                                    // to="product"
+                                    // key="product"
+                                    className="hover:text-orange-400 text-sm md:text-md"
+                                >
+                                    Layanan Kami
+                                </Link>
+                                <Link
+                                    href="/contact"
+                                    // to="contact"
+                                    // key="contact"
+                                    className="hover:text-orange-400 text-sm md:text-md"
+                                >
+                                    Kontak Kami
+                                </Link>
+                            </li>
+                        </ul>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1.5 }}
+                        className="flex items-center"
+                    >
                         {/* <button>Pesan</button> */}
                         <a
                             href={whatsappUrl}
@@ -99,7 +132,7 @@ const Layout = ({ children }) => {
                             className="text-2xl block md:hidden ml-2"
                             onClick={() => setNav((prev) => !prev)}
                         />
-                    </div>
+                    </motion.div>
                     <div
                         className={`${
                             nav ? "right-0" : "-right-[100%]"
