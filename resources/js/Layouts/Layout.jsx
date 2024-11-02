@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
     };
     const variants2 = {
         hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
     };
 
     return (
@@ -75,7 +75,7 @@ const Layout = ({ children }) => {
                     <motion.div
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1.5 }}
+                        transition={{ duration: 1 }}
                     >
                         <ul className="hidden md:flex">
                             <li className="flex gap-x-4">
@@ -117,7 +117,7 @@ const Layout = ({ children }) => {
                     <motion.div
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1.5 }}
+                        transition={{ duration: 1 }}
                         className="flex items-center"
                     >
                         {/* <button>Pesan</button> */}
