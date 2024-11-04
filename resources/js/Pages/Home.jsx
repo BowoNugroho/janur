@@ -13,6 +13,21 @@ import home11 from "@/Assets/home11.jpeg";
 import ongkir2 from "@/Assets/ongkir2.svg";
 import wedding from "@/Assets/wedding.svg";
 import money1 from "@/Assets/money1.svg";
+import client1 from "@/Assets/client1.jpeg";
+import tuwuhan from "@/Assets/tuwuhan.jpeg";
+import janur1 from "@/Assets/janur1.jpeg";
+import janur2 from "@/Assets/janur2.jpeg";
+import janur3 from "@/Assets/janur3.jpeg";
+import dekor1 from "@/Assets/dekor1.jpeg";
+import dekor2 from "@/Assets/dekor2.jpeg";
+import dekor4 from "@/Assets/dekor4.jpeg";
+import dekor5 from "@/Assets/dekor5.jpeg";
+import dekor6 from "@/Assets/dekor6.jpeg";
+import dekor7 from "@/Assets/dekor7.jpeg";
+import dekor8 from "@/Assets/dekor8.jpeg";
+import dekor9 from "@/Assets/dekor9.jpeg";
+import siraman3 from "@/Assets/siraman3.jpeg";
+import siraman4 from "@/Assets/siraman4.jpeg";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -24,11 +39,11 @@ const Home = () => {
         },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 3,
+            items: 4,
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 2,
+            items: 3,
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -92,7 +107,7 @@ const Home = () => {
     };
     const handleScroll6 = () => {
         // Memeriksa apakah sudah menggulir ke bawah
-        if (window.scrollY > 1800) {
+        if (window.scrollY > 1900) {
             setIsScrolled6(true);
         } else {
             setIsScrolled6(false);
@@ -439,7 +454,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="pt-7 px-5 ">
-                        <div className="rounded-xl mb-10 ">
+                        <div className="rounded-xl mb-14 ">
                             <motion.div
                                 initial={{ opacity: 0, y: -20 }}
                                 animate={
@@ -451,7 +466,7 @@ const Home = () => {
                                     duration: 0.8,
                                     ease: "easeOut",
                                 }}
-                                className="flex justify-center mb-9"
+                                className="flex justify-center mb-10"
                             >
                                 <p className="font-bold lg:text-[43px] h-[32px] text-2xl">
                                     Pelanggan Kami
@@ -474,32 +489,109 @@ const Home = () => {
                                 className=""
                             >
                                 <Carousel responsive={responsive}>
-                                    <div className="px-5">
+                                    <div className="flex justify-center px-5">
                                         <img
-                                            src={home11}
+                                            src={dekor5}
                                             alt=""
-                                            className="rounded-xl"
+                                            className="h-[250px] rounded-xl"
                                         />
                                     </div>
-                                    <div className="px-5">
+                                    <div className="flex justify-center px-5">
                                         <img
-                                            src={home11}
+                                            src={client1}
                                             alt=""
-                                            className="rounded-xl"
+                                            className=" h-[250px] rounded-xl"
                                         />
                                     </div>
-                                    <div className="px-5">
+                                    <div className="flex justify-center px-5">
                                         <img
-                                            src={home11}
+                                            src={tuwuhan}
                                             alt=""
-                                            className="rounded-xl"
+                                            className=" h-[250px] rounded-xl"
                                         />
                                     </div>
-                                    <div className="px-5">
+                                    <div className="flex justify-center px-5">
                                         <img
-                                            src={home11}
+                                            src={janur1}
                                             alt=""
-                                            className="rounded-xl"
+                                            className=" h-[250px] rounded-xl"
+                                        />
+                                    </div>
+                                    <div className="flex justify-center px-5">
+                                        <img
+                                            src={siraman3}
+                                            alt=""
+                                            className=" h-[250px] rounded-xl"
+                                        />
+                                    </div>
+                                    <div className="flex justify-center px-5">
+                                        <img
+                                            src={janur2}
+                                            alt=""
+                                            className=" h-[250px] rounded-xl"
+                                        />
+                                    </div>
+                                    <div className="flex justify-center px-5">
+                                        <img
+                                            src={dekor2}
+                                            alt=""
+                                            className=" h-[250px] rounded-xl"
+                                        />
+                                    </div>
+                                    <div className="flex justify-center px-5">
+                                        <img
+                                            src={janur3}
+                                            alt=""
+                                            className=" h-[250px] rounded-xl"
+                                        />
+                                    </div>
+                                    <div className="flex justify-center px-5">
+                                        <img
+                                            src={dekor4}
+                                            alt=""
+                                            className=" h-[250px] rounded-xl"
+                                        />
+                                    </div>
+                                    <div className="flex justify-center px-5">
+                                        <img
+                                            src={siraman4}
+                                            alt=""
+                                            className=" h-[250px] rounded-xl"
+                                        />
+                                    </div>
+                                    <div className="flex justify-center px-5">
+                                        <img
+                                            src={dekor6}
+                                            alt=""
+                                            className=" h-[250px] rounded-xl"
+                                        />
+                                    </div>
+                                    <div className="flex justify-center px-5">
+                                        <img
+                                            src={dekor9}
+                                            alt=""
+                                            className=" h-[250px] rounded-xl"
+                                        />
+                                    </div>
+                                    <div className="flex justify-center px-5">
+                                        <img
+                                            src={dekor1}
+                                            alt=""
+                                            className="h-[250px] rounded-xl"
+                                        />
+                                    </div>
+                                    <div className="flex justify-center px-5">
+                                        <img
+                                            src={dekor8}
+                                            alt=""
+                                            className=" h-[250px] rounded-xl"
+                                        />
+                                    </div>
+                                    <div className="flex justify-center px-5">
+                                        <img
+                                            src={dekor7}
+                                            alt=""
+                                            className=" h-[250px] rounded-xl"
                                         />
                                     </div>
                                 </Carousel>
@@ -519,7 +611,7 @@ const Home = () => {
                             transition={{
                                 duration: 0.8,
                             }}
-                            className="flex justify-center mb-6 pt-5"
+                            className="flex justify-center mb-6 pt-6"
                         >
                             <p className="font-bold lg:text-[43px] h-[32px] text-2xl">
                                 Testimoni
