@@ -13,6 +13,25 @@ import { motion } from "framer-motion";
 const Layout = ({ children }) => {
     const [nav, setNav] = useState(false);
     const [scroll, setScroll] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [isScrolled2, setIsScrolled2] = useState(false);
+
+    const handleScroll = () => {
+        // Memeriksa apakah sudah menggulir ke bawah
+        if (window.scrollY > 2200) {
+            setIsScrolled(true);
+        } else {
+            setIsScrolled(false);
+        }
+    };
+    const handleScroll2 = () => {
+        // Memeriksa apakah sudah menggulir ke bawah
+        if (window.scrollY > 2300) {
+            setIsScrolled2(true);
+        } else {
+            setIsScrolled2(false);
+        }
+    };
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
@@ -23,6 +42,8 @@ const Layout = ({ children }) => {
                 setScroll(false);
             }
         });
+        window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", handleScroll2);
     });
 
     const phoneNumber = "628156715273"; // Ganti dengan nomor WhatsApp Anda
@@ -43,29 +64,6 @@ const Layout = ({ children }) => {
         visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
     };
 
-    const [isScrolled, setIsScrolled] = useState(false);
-    const [isScrolled2, setIsScrolled2] = useState(false);
-    const handleScroll = () => {
-        // Memeriksa apakah sudah menggulir ke bawah
-        if (window.scrollY > 2200) {
-            setIsScrolled(true);
-        } else {
-            setIsScrolled(false);
-        }
-    };
-    const handleScroll2 = () => {
-        // Memeriksa apakah sudah menggulir ke bawah
-        if (window.scrollY > 2300) {
-            setIsScrolled2(true);
-        } else {
-            setIsScrolled2(false);
-        }
-    };
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-        window.addEventListener("scroll", handleScroll2);
-    }, []);
-
     return (
         <>
             <div className="grid grid-cols-1 gap-4">
@@ -80,7 +78,7 @@ const Layout = ({ children }) => {
                     <p className="text-white"> HUBUNGI KAMI : 0813 9373 0949</p>
                 </motion.div>
                 <div
-                    className={`flex justify-between items-center px-5 lg:px-[120px] h-[60px] w-full fixed ${scrollActive}`}
+                    className={`flex justify-between items-center px-5 lg:px-[120px]  h-[60px] w-full fixed ${scrollActive}`}
                 >
                     <motion.div
                         initial="hidden"
@@ -88,11 +86,6 @@ const Layout = ({ children }) => {
                         variants={variants2}
                         className="w-[120px] h-[15]"
                     >
-                        {/* <img
-                    src={logo}
-                    alt=""
-                    className="w-full h-full object-contain"
-                /> */}
                         <p>Ridwan Janur</p>
                     </motion.div>
                     <motion.div
@@ -290,7 +283,7 @@ const Layout = ({ children }) => {
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={
-                            isScrolled
+                            isScrolled2
                                 ? { opacity: 1, y: 0 }
                                 : { opacity: 0, y: 20 }
                         }
