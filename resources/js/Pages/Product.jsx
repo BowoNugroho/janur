@@ -33,6 +33,11 @@ const Product = () => {
         window.addEventListener("scroll", handleScroll);
         window.addEventListener("scroll", handleScroll2);
     }, []);
+
+    const variants = {
+        hidden: { opacity: 0, y: 30 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    };
     return (
         <Layout>
             <div className="product">
@@ -46,11 +51,16 @@ const Product = () => {
                     ></div>
                 </div>
                 <div className="container mx-auto py-2">
-                    <div className="flex justify-center pt-10">
+                    <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        variants={variants}
+                        className="flex justify-center pt-10"
+                    >
                         <p className="lg:text-[35px] text-[25px]  font-bold">
                             Layanan Kami
                         </p>
-                    </div>
+                    </motion.div>
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 pt-5 px-5">
                         <motion.div
                             initial={{ opacity: 0, scale: 0.5 }}
