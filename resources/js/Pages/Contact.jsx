@@ -43,10 +43,11 @@ const Contact = () => {
             Swal.fire("Dibatalkan", "pesan harus diisi!.", "info");
             return;
         }
-        const phone = "628156715273";
+        const phone = "6281393730949";
+        const message2 = " \n (Referensi website https://ridwanjanur.com/)"; // Pesan default
         // Membuat URL WhatsApp
         const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(
-            message
+            message + message2
         )}`;
 
         // Mengarahkan ke URL WhatsApp

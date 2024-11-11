@@ -46,9 +46,9 @@ const Layout = ({ children }) => {
         window.addEventListener("scroll", handleScroll2);
     });
 
-    const phoneNumber = "628156715273"; // Ganti dengan nomor WhatsApp Anda
+    const phoneNumber = "6281393730949"; // Ganti dengan nomor WhatsApp Anda
     const message =
-        "Halo! Saya ingin bertanya tentang Dekorasi Bunga Gedung Referensi dari Website"; // Pesan default
+        "Hai, saya baru saja mengunjungi website anda, dan saya butuh bantuan, Ini linknya https://ridwanjanur.com/"; // Pesan default
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
         message
     )}`;

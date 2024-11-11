@@ -58,9 +58,9 @@ const Home = () => {
         },
     };
 
-    const phoneNumber = "628156715273"; // Ganti dengan nomor WhatsApp Anda
+    const phoneNumber = "6281393730949"; // Ganti dengan nomor WhatsApp Anda
     const message =
-        "Halo! Saya ingin bertanya tentang Dekorasi Bunga Gedung Referensi dari Website"; // Pesan default
+        "Hai, saya baru saja mengunjungi website anda, dan saya butuh bantuan, Ini linknya https://ridwanjanur.com/"; // Pesan default
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
         message
     )}`;
@@ -697,7 +697,7 @@ const Home = () => {
                                         </div>
                                         <div className="box px-2 pt-2 col-span-2">
                                             <p className="lg:text-2xl text-lg font-semibold">
-                                                olivia
+                                                Fadilla
                                             </p>
                                         </div>
                                     </div>
@@ -729,7 +729,7 @@ const Home = () => {
                                         </div>
                                         <div className="box px-2 pt-2 col-span-2">
                                             <p className="lg:text-2xl text-lg font-semibold">
-                                                olivia
+                                                Selvia
                                             </p>
                                         </div>
                                     </div>
