@@ -86,7 +86,7 @@ const Layout = ({ children }) => {
                         variants={variants2}
                         className="w-[120px] h-[15]"
                     >
-                        <p>Ridwan Janur</p>
+                        <p>Cahaya Abadi</p>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, scale: 0.5 }}

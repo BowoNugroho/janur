@@ -94,10 +94,10 @@ const About = () => {
                             </h1>
                             <p className="mb-4 leading-8 lg:text-[16px] md:text-[14px] text-sm">
                                 Kami adalah tim profesional yang berdedikasi
-                                dalam bidang dekorasi acara, termasuk siraman,
-                                pernikahan, rias wajah, dan anyaman janur.
-                                Dengan pengalaman bertahun-tahun, kami memahami
-                                betapa pentingnya setiap detail dalam
+                                dalam bidang seni dekorasi acara, termasuk
+                                siraman, pernikahan, rias wajah, dan anyaman
+                                janur. Dengan pengalaman bertahun-tahun, kami
+                                memahami betapa pentingnya setiap detail dalam
                                 menciptakan suasana yang memukau dan berkesan.
                             </p>
                             <p className=" leading-8 lg:text-[16px] md:text-[14px] text-sm">
@@ -140,7 +140,7 @@ const About = () => {
                             className="box"
                         >
                             <span className="font-bold text-white lg:text-2xl text-xl px-10">
-                                Ridwan Janur
+                                Cahaya Abadi
                             </span>
                             <p className="text-white lg:text-lg md:text-md  text-sm px-10 mt-5">
                                 Kami melayani pesanan anyaman Janur, Dekorasi
@@ -179,7 +179,7 @@ const About = () => {
                             </p>
                             <p className=" flex">
                                 <AiOutlineGlobal className="mr-3 h-7 text-lg" />
-                                www.ridwanjanur.com
+                                www.cahayaabadi.com
                             </p>
                         </motion.div>
                         <motion.div
@@ -220,7 +220,7 @@ const About = () => {
                     >
                         <p className="flex  text-white px-5 lg:text-lg md:text-md text-[12px]">
                             <AiOutlineCopyright className="lg:h-6 h-4 text-lg" />
-                            2024 ridwanjanur.com. All rights reserved.
+                            2024 cahayaabadi.com. All rights reserved.
                         </p>
                         {/* <div className="flex gap-4 text-white px-5 lg:text-lg md:text-md text-[12px]">
                             <SiInstagram />
