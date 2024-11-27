@@ -60,7 +60,7 @@ const Home = () => {
 
     const phoneNumber = "6281393730949"; // Ganti dengan nomor WhatsApp Anda
     const message =
-        "Hai, saya baru saja mengunjungi website anda, dan saya butuh bantuan, Ini linknya https://ridwanjanur.com/"; // Pesan default
+        "Hai, saya baru saja mengunjungi website anda, dan saya butuh bantuan, Ini linknya https://cahayaabadi.com/"; // Pesan default
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
         message
     )}`;

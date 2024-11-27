@@ -44,7 +44,7 @@ const Contact = () => {
             return;
         }
         const phone = "6281393730949";
-        const message2 = " \n (Referensi website https://ridwanjanur.com/)"; // Pesan default
+        const message2 = " \n (Referensi website https://cahayaabadi.com/)"; // Pesan default
         // Membuat URL WhatsApp
         const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(
             message + message2
